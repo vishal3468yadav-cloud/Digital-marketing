@@ -1,0 +1,442 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background: #f6f7fb;
+}
+
+/* Header */
+header {
+    width: 100%;
+    background: #1e1e2f;
+    padding: 15px 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    z-index: 1000;
+}
+
+header .logo {
+    color: #fff;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+header nav a {
+    color: #fff;
+    margin: 0 12px;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+/* Hero Section */
+.hero {
+    height: 100vh;
+    background: linear-gradient(to right, #4f8df5, #7a55ff);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding-top: 80px;
+}
+
+.hero h1 {
+    font-size: 50px;
+    color: white;
+}
+
+.hero p {
+    margin-top: 10px;
+    color: #f2f2f2;
+    font-size: 18px;
+}
+
+.btn {
+    margin-top: 20px;
+    padding: 12px 25px;
+    background: white;
+    color: #4f8df5;
+    border-radius: 5px;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+/* Features */
+.features {
+    padding: 80px 60px;
+    text-align: center;
+}
+
+.features .feature-box {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 40px;
+}
+
+.features .box {
+    background: white;
+    padding: 30px;
+    border-radius: 10px;
+    width: 28%;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+/* About */
+.about {
+    padding: 80px 60px;
+    background: #ffffff;
+    text-align: center;
+}
+
+.about p {
+    width: 70%;
+    margin: auto;
+    font-size: 18px;
+}
+
+/* Services */
+.services {
+    padding: 80px 60px;
+    background: #f6f6f9;
+    text-align: center;
+}
+
+.services .service-box {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 40px;
+}
+
+.services .service {
+    background: white;
+    padding: 30px;
+    border-radius: 10px;
+    width: 28%;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+/* Contact */
+.contact {
+    padding: 80px 60px;
+    text-align: center;
+}
+
+.contact-form {
+    width: 45%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.contact-form input,
+.contact-form textarea {
+    padding: 12px;
+    margin: 10px 0;
+    border-radius: 5px;
+    border: 1px solid #aaa;
+    font-size: 16px;
+}
+
+.contact-form button {
+    padding: 12px;
+    background: #4f8df5;
+    color: white;
+    font-size: 18px;
+    border: none;
+    border-radius: 5px;
+    margin-top: 10px;
+}
+
+/* Footer */
+footer {
+    background: #1e1e2f;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+.hero {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding-top: 90px;
+    background: linear-gradient(to right, #4f8df5, #7a55ff);
+}
+
+.hero-image img {
+    width: 400px;
+    border-radius: 10px;
+}
+/* Gallery Section */
+.gallery {
+    padding: 80px 60px;
+    text-align: center;
+    background: #ffffff;
+}
+
+.gallery h2 {
+    margin-bottom: 40px;
+    font-size: 32px;
+}
+
+.gallery-box {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 25px;
+}
+
+.gallery-box img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+    transition: transform 0.3s ease;
+}
+
+.gallery-box img:hover {
+    transform: scale(1.05);
+}
+/* Coffee Hero Section */
+.coffee-hero {
+    height: 100vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 120px 80px;
+    background: linear-gradient(135deg, #3b2f2f, #6b4f4f);
+    color: #fff;
+}
+
+.coffee-left {
+    max-width: 50%;
+}
+
+.coffee-left h1 {
+    font-size: 55px;
+    line-height: 1.2;
+    font-weight: 700;
+    color: #f9e8d9;
+}
+
+.coffee-left p {
+    margin-top: 20px;
+    font-size: 18px;
+    color: #f5d7b7;
+}
+
+.coffee-btn {
+    display: inline-block;
+    margin-top: 30px;
+    padding: 14px 28px;
+    background: #d1a06f;
+    color: #3b2f2f;
+    border-radius: 8px;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: bold;
+    transition: 0.3s ease;
+}
+
+.coffee-btn:hover {
+    background: #fff;
+    color: #6b4f4f;
+}
+
+/* Right Side Coffee Image */
+.coffee-right img {
+    width: 420px;
+    filter: drop-shadow(0px 6px 20px rgba(0,0,0,0.4));
+    border-radius: 12px;
+}
+/* ------------------ Professional Contact Section ------------------ */
+.pro-contact {
+    padding: 100px 70px;
+    background: linear-gradient(135deg, #2b1d1d, #4b2f2f);
+    text-align: center;
+    color: #fcebd2;
+}
+
+.pro-contact h2 {
+    font-size: 36px;
+    margin-bottom: 10px;
+    letter-spacing: 1px;
+}
+
+.contact-subtitle {
+    font-size: 18px;
+    margin-bottom: 50px;
+    color: #e6c7a1;
+}
+
+.contact-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 50px;
+}
+
+.pro-form {
+    width: 50%;
+    background: rgba(255, 255, 255, 0.08);
+    padding: 40px;
+    border-radius: 18px;
+    backdrop-filter: blur(8px);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.form-group input,
+.form-group textarea {
+    width: 100%;
+    padding: 15px;
+    margin: 12px 0;
+    border: none;
+    border-radius: 10px;
+    background: rgba(255, 255, 255, 0.15);
+    color: #fcebd2;
+    font-size: 16px;
+}
+
+.form-group input::placeholder,
+.form-group textarea::placeholder {
+    color: #e4c9ab;
+}
+
+.pro-btn {
+    width: 100%;
+    padding: 15px;
+    background: #d1a06f;
+    border: none;
+    border-radius: 10px;
+    font-size: 18px;
+    color: #3b2f2f;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.pro-btn:hover {
+    background: #fff;
+    color: #6b4f4f;
+}
+
+.contact-image img {
+    width: 400px;
+    border-radius: 15px;
+    filter: drop-shadow(0px 5px 15px rgba(0, 0, 0, 0.4));
+}
+/* ------------------ Coffee Services Section ------------------ */
+.coffee-services {
+    padding: 100px 70px;
+    background: #f9f2e8;
+    text-align: center;
+}
+
+.coffee-services h2 {
+    font-size: 36px;
+    color: #3b2f2f;
+    margin-bottom: 10px;
+}
+
+.service-sub {
+    color: #6b4f4f;
+    font-size: 18px;
+    margin-bottom: 50px;
+}
+
+.service-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+}
+
+.service-card {
+    background: #fff;
+    padding: 35px 25px;
+    width: 30%;
+    border-radius: 18px;
+    box-shadow: 0 5px 18px rgba(0,0,0,0.1);
+    transition: 0.4s ease;
+    border: 2px solid transparent;
+}
+
+.service-card img {
+    width: 90px;
+    margin-bottom: 20px;
+}
+
+.service-card h3 {
+    color: #3b2f2f;
+    font-size: 22px;
+    margin-bottom: 10px;
+    font-weight: 700;
+}
+
+.service-card p {
+    color: #6b4f4f;
+    font-size: 16px;
+}
+
+.service-card:hover {
+    transform: translateY(-10px);
+    border: 2px solid #d1a06f;
+    box-shadow: 0 8px 25px rgba(0,0,0,0.2);
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body{
+    background: #fdfcfb;
+    color: #333;
+}
+
+/* NAVBAR */
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 50px;
+    background: #2b1d0f;
+    color: white;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+nav .logo{
+    font-size: 28px;
+    font-weight: bold;
+}
+
+nav ul{
+    display: flex;
+    gap: 30px;
+    list-style: none;
+}
+
+nav ul li a{
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+nav ul li a:hover{
+    color: #d4a574;
+}
+
+/* HERO SECTION */
+.hero{
+    display: flex;
+    align-items: center;
+}
